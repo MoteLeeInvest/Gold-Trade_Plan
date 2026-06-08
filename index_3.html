@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>XAUUSD Gold Trade Plan — 8 มิ.ย. 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#C9952A;--gold2:#E8B84B;
+  --dark:#0B0D0F;--dark2:#12151A;--dark3:#1A1F27;--border:#2A333F;
+  --red:#E05555;--red2:#FF7070;
+  --green:#3DB87A;--green2:#5FCFA0;
+  --amber:#E89830;--amber2:#F5B84B;
+  --blue:#4D9FFF;--blue2:#7DB8FF;
+  --text:#E8ECF0;--text2:#8A9BB0;--text3:#4A5A70;
+  --mono:'Space Mono',monospace;--sans:'Noto Sans Thai',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--dark);color:var(--text);font-family:var(--sans);min-height:100vh;font-size:13px;line-height:1.5}
+
+nav{background:var(--dark2);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#B8821E,var(--gold2));display:flex;align-items:center;justify-content:center;font-size:16px;color:#412402;font-weight:700}
+.logo-text{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--gold);letter-spacing:2px}
+.logo-sub{font-size:10px;color:var(--text2);margin-top:1px}
+.live-pill{display:flex;align-items:center;gap:5px;font-size:10px;font-weight:600;color:var(--red2);background:rgba(224,85,85,0.1);border:1px solid rgba(224,85,85,0.3);padding:4px 10px;border-radius:100px}
+.dot-r{width:5px;height:5px;border-radius:50%;background:var(--red);animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+.hero{background:linear-gradient(180deg,var(--dark2) 0%,var(--dark) 100%);border-bottom:1px solid var(--border);padding:36px 28px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(201,149,42,0.08),transparent 70%);pointer-events:none}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.hero-left{}
+.hero-sym{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:8px}
+.hero-price{font-family:var(--mono);font-size:44px;font-weight:700;color:var(--text);line-height:1;letter-spacing:-2px}
+.hero-price span{font-size:18px;color:var(--text2);font-weight:400}
+.hero-chg{font-size:12px;color:var(--red2);margin-top:5px;display:flex;align-items:center;gap:6px}
+.gold-line{height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2),transparent);border-radius:1px;margin:14px 0}
+.bias-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.bias-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(224,85,85,0.15);border:1px solid rgba(224,85,85,0.35);border-radius:100px;padding:5px 14px}
+.bias-text{font-size:12px;font-weight:600;color:var(--red2);letter-spacing:.4px}
+.badge-sm{font-size:10px;color:var(--text2);background:var(--dark3);border:1px solid var(--border);padding:3px 9px;border-radius:100px}
+.hero-right{text-align:right}
+.hero-date{font-size:15px;font-weight:600;color:var(--text)}
+.hero-sub{font-size:11px;color:var(--text2);margin-top:3px}
+
+.main{max-width:900px;margin:0 auto;padding:28px 20px}
+
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.mc{background:var(--dark2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.ml{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.mv{font-size:18px;font-weight:700;font-family:var(--mono);color:var(--text)}
+.mv.r{color:var(--red2)}.mv.g{color:var(--green2)}.mv.a{color:var(--amber2)}.mv.b{color:var(--blue2)}
+.ms{font-size:10px;color:var(--text2);margin-top:2px}
+
+.sec{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin:18px 0 8px;display:flex;align-items:center;gap:6px}
+.sec::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.tf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.tf-card{background:var(--dark2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.tf-name{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.tf-bias{font-size:13px;font-weight:600}
+.tf-bear{color:var(--red2)}.tf-bull{color:var(--green2)}.tf-neu{color:var(--amber2)}
+.tf-note{font-size:10px;color:var(--text2);margin-top:3px;line-height:1.4}
+
+.lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.lv{background:var(--dark2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.lv-r{border-left:2px solid var(--red);border-radius:0 8px 8px 0}
+.lv-g{border-left:2px solid var(--green);border-radius:0 8px 8px 0}
+.lv-a{border-left:2px solid var(--amber);border-radius:0 8px 8px 0}
+.lv-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.lv-val{font-size:15px;font-weight:700;font-family:var(--mono)}
+.lv-r .lv-val{color:var(--red2)}.lv-g .lv-val{color:var(--green2)}.lv-a .lv-val{color:var(--amber2)}
+.lv-note{font-size:10px;color:var(--text2);margin-top:2px}
+
+.tc{background:var(--dark2);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:10px}
+.tc-head{padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+.tc-sell{background:linear-gradient(90deg,rgba(224,85,85,0.2),rgba(224,85,85,0.05));border-bottom:1px solid rgba(224,85,85,0.25)}
+.tc-buy{background:linear-gradient(90deg,rgba(61,184,122,0.15),rgba(61,184,122,0.04));border-bottom:1px solid rgba(61,184,122,0.22)}
+.tc-title{font-size:13px;font-weight:600}
+.tc-ts{color:var(--red2)}.tc-tb{color:var(--green2)}
+.tc-cond{font-size:10.5px;margin-top:2px;opacity:.75}
+.rr-pill{font-size:10px;font-weight:700;padding:3px 10px;border-radius:5px;font-family:var(--mono)}
+.rr-s{background:rgba(224,85,85,0.2);color:var(--red2);border:1px solid rgba(224,85,85,0.3)}
+.rr-b{background:rgba(61,184,122,0.18);color:var(--green2);border:1px solid rgba(61,184,122,0.28)}
+.tc-body{padding:12px 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.tc-lbl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+.tc-val{font-size:14px;font-weight:700;font-family:var(--mono)}
+.tv-e{color:var(--text)}.tv-s{color:var(--red2)}.tv-t{color:var(--green2)}
+
+.ev-card{background:var(--dark2);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px}
+.ev-head{padding:9px 16px;background:var(--dark3);border-bottom:1px solid var(--border);font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.8px}
+.ev-row{display:flex;align-items:flex-start;gap:12px;padding:10px 16px;border-bottom:1px solid rgba(42,51,63,0.5)}
+.ev-row:last-child{border-bottom:none}
+.ev-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.dh{background:var(--red)}.dm{background:var(--amber)}.dl{background:var(--text3)}
+.ev-time{font-family:var(--mono);font-size:10.5px;color:var(--text2);min-width:72px;padding-top:1px}
+.ev-name{font-size:11.5px;font-weight:500;color:var(--text)}
+.ev-note{font-size:10.5px;color:var(--text2);margin-top:1px}
+
+.warn{background:rgba(232,152,48,0.1);border:1px solid rgba(232,152,48,0.28);border-radius:8px;padding:12px 16px;display:flex;gap:10px;margin-bottom:16px}
+.warn-icon{font-size:16px;flex-shrink:0;color:var(--amber2);margin-top:1px}
+.warn-text{font-size:11.5px;color:var(--amber2);line-height:1.7}
+
+.inst-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.inst-box{background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.inst-title{font-size:12px;font-weight:600;margin-bottom:8px}
+.inst-bull{color:var(--green2)}.inst-bear{color:var(--red2)}
+.inst-text{font-size:11px;color:var(--text2);line-height:1.7}
+
+footer{background:var(--dark2);border-top:1px solid var(--border);padding:18px 28px;text-align:center;margin-top:10px}
+.ft-brand{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:4px}
+.ft-text{font-size:10px;color:var(--text3);line-height:1.8}
+
+@media(max-width:600px){
+  .g4,.tf-grid{grid-template-columns:1fr 1fr}
+  .lv-grid,.g3{grid-template-columns:1fr 1fr}
+  .tc-body{grid-template-columns:1fr 1fr}
+  .inst-grid{grid-template-columns:1fr}
+  .hero-price{font-size:32px}
+  .main{padding:20px 14px}
+  nav{padding:12px 14px}
+  .hero{padding:24px 14px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-icon">Au</div>
+    <div>
+      <div class="logo-text">GOLD PLAN</div>
+      <div class="logo-sub">XAUUSD Daily Analysis</div>
+    </div>
+  </div>
+  <div class="live-pill"><div class="dot-r"></div>SELL BIAS</div>
+</nav>
+
+<div class="hero">
+  <div class="hero-top">
+    <div class="hero-left">
+      <div class="hero-sym">XAU / USD &nbsp;·&nbsp; Gold Spot &nbsp;·&nbsp; OANDA</div>
+      <div class="hero-price">$4,321 <span>USD/oz</span></div>
+      <div class="hero-chg">&#9660; −8.88% (20D) &nbsp;·&nbsp; −6.83% (10W) &nbsp;·&nbsp; Low วันนี้ $4,268</div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-date">8 มิถุนายน 2026</div>
+      <div class="hero-sub">Daily Trade Plan</div>
+      <div class="hero-sub" style="margin-top:2px">SMC + ICT + Elliott Wave</div>
+    </div>
+  </div>
+  <div class="gold-line"></div>
+  <div class="bias-row">
+    <div class="bias-pill"><div class="dot-r"></div><div class="bias-text">SELL BIAS — Bearish ทุก TF</div></div>
+    <div class="badge-sm">Elliott Wave C ขาลง</div>
+    <div class="badge-sm">NFP 172K Shock</div>
+    <div class="badge-sm">Rate Hike Fear</div>
+  </div>
+</div>
+
+<div class="main">
+
+<div class="sec">Market snapshot</div>
+<div class="g4">
+  <div class="mc"><div class="ml">ราคาปัจจุบัน</div><div class="mv r">$4,321</div><div class="ms">OANDA Real-time</div></div>
+  <div class="mc"><div class="ml">Weekly Low</div><div class="mv r">$4,268</div><div class="ms">Low สุดใน 2026</div></div>
+  <div class="mc"><div class="ml">EMA H1</div><div class="mv">$4,317</div><div class="ms">ราคาอยู่ใต้ EMA</div></div>
+  <div class="mc"><div class="ml">LuxAlgo Swing High</div><div class="mv">$4,595</div><div class="ms">Resistance หลัก</div></div>
+</div>
+
+<div class="sec">Multi-timeframe structure</div>
+<div class="tf-grid">
+  <div class="tf-card">
+    <div class="tf-name">Weekly (10W)</div>
+    <div class="tf-bias tf-bear">&#9660; Bearish</div>
+    <div class="tf-note">High $4,891 → Low $4,268 &nbsp;·&nbsp; −6.83% &nbsp;·&nbsp; Lower High ทุก bar</div>
+  </div>
+  <div class="tf-card">
+    <div class="tf-name">Daily (20D)</div>
+    <div class="tf-bias tf-bear">&#9660; Bearish</div>
+    <div class="tf-note">−8.88% &nbsp;·&nbsp; ใต้ EMA $4,317 &nbsp;·&nbsp; ใต้ SMA $4,316</div>
+  </div>
+  <div class="tf-card">
+    <div class="tf-name">H4 (20 bars)</div>
+    <div class="tf-bias tf-bear">&#9660; Bearish</div>
+    <div class="tf-note">$4,515 → $4,268 &nbsp;·&nbsp; −2.79% &nbsp;·&nbsp; Lower Low ใหม่</div>
+  </div>
+  <div class="tf-card">
+    <div class="tf-name">H1 (24H)</div>
+    <div class="tf-bias tf-bear">&#9660; Bearish</div>
+    <div class="tf-note">$4,379 → $4,268 &nbsp;·&nbsp; Bounce จาก Low &nbsp;·&nbsp; Bearish vol spike</div>
+  </div>
+</div>
+
+<div class="sec">Key levels</div>
+<div class="lv-grid">
+  <div class="lv lv-r"><div class="lv-label">Resistance R1</div><div class="lv-val">$4,340–4,360</div><div class="lv-note">EMA/SMA zone + Retest area</div></div>
+  <div class="lv lv-r"><div class="lv-label">Resistance R2</div><div class="lv-val">$4,380–4,400</div><div class="lv-note">Prior support turned resistance</div></div>
+  <div class="lv lv-r"><div class="lv-label">Strong Resistance</div><div class="lv-val">$4,595</div><div class="lv-note">LuxAlgo Swing High</div></div>
+  <div class="lv lv-a"><div class="lv-label">ราคาปัจจุบัน</div><div class="lv-val">$4,321</div><div class="lv-note">Bounce จาก Low $4,268</div></div>
+  <div class="lv lv-g"><div class="lv-label">Support S1</div><div class="lv-val">$4,268–4,280</div><div class="lv-note">Weekly Low วันนี้ — Tested 3x</div></div>
+  <div class="lv lv-g"><div class="lv-label">Support S2</div><div class="lv-val">$4,186</div><div class="lv-note">June forecast low</div></div>
+</div>
+
+<div class="sec">Trade setups</div>
+
+<div class="tc">
+  <div class="tc-head tc-sell">
+    <div>
+      <div class="tc-title tc-ts">&#9660; Sell — Primary (Sell the Bounce)</div>
+      <div class="tc-cond tc-ts">รอ bounce $4,340–4,360 + H1 ปิดแดง + CISD Bear confirm</div>
+    </div>
+    <span class="rr-pill rr-s">RR 1:2.0</span>
+  </div>
+  <div class="tc-body">
+    <div><div class="tc-lbl">Entry Zone</div><div class="tc-val tv-e">$4,340–4,360</div></div>
+    <div><div class="tc-lbl">Stop Loss</div><div class="tc-val tv-s">$4,381</div></div>
+    <div><div class="tc-lbl">TP1</div><div class="tc-val tv-t">$4,280</div></div>
+    <div><div class="tc-lbl">TP2</div><div class="tc-val tv-t">$4,268</div></div>
+  </div>
+</div>
+
+<div class="tc">
+  <div class="tc-head tc-sell">
+    <div>
+      <div class="tc-title tc-ts">&#9660; Sell — Aggressive (EMA Reject)</div>
+      <div class="tc-cond tc-ts">H1 spike ขึ้น EMA $4,317 + reject ทันที + volume ต่ำ</div>
+    </div>
+    <span class="rr-pill rr-s">RR 1:1.8</span>
+  </div>
+  <div class="tc-body">
+    <div><div class="tc-lbl">Entry</div><div class="tc-val tv-e">$4,316–4,320</div></div>
+    <div><div class="tc-lbl">Stop Loss</div><div class="tc-val tv-s">$4,345</div></div>
+    <div><div class="tc-lbl">TP1</div><div class="tc-val tv-t">$4,280</div></div>
+    <div><div class="tc-lbl">TP2</div><div class="tc-val tv-t">$4,268</div></div>
+  </div>
+</div>
+
+<div class="tc">
+  <div class="tc-head tc-buy">
+    <div>
+      <div class="tc-title tc-tb">&#9650; Buy — Conditional (CPI ต่ำกว่าคาด)</div>
+      <div class="tc-cond tc-tb">$4,268 ยืน 2H bars + bullish engulf + CPI อังคาร ต่ำกว่าคาด</div>
+    </div>
+    <span class="rr-pill rr-b">RR 1:2.2</span>
+  </div>
+  <div class="tc-body">
+    <div><div class="tc-lbl">Entry Zone</div><div class="tc-val tv-e">$4,270–4,290</div></div>
+    <div><div class="tc-lbl">Stop Loss</div><div class="tc-val tv-s">$4,240</div></div>
+    <div><div class="tc-lbl">TP1</div><div class="tc-val tv-t">$4,340</div></div>
+    <div><div class="tc-lbl">TP2</div><div class="tc-val tv-t">$4,380</div></div>
+  </div>
+</div>
+
+<div class="sec">Catalyst สัปดาห์นี้</div>
+<div class="ev-card">
+  <div class="ev-head">Economic Events</div>
+  <div class="ev-row"><div class="ev-dot dm"></div><div class="ev-time">วันนี้ จ.</div><div><div class="ev-name">Fed Speakers — Hawkish tone</div><div class="ev-note">USD แข็ง → Gold กดดัน</div></div></div>
+  <div class="ev-row"><div class="ev-dot dh"></div><div class="ev-time">อ. 10 มิ.ย.</div><div><div class="ev-name">CPI May 2026 — ตัวชี้ขาดสัปดาห์</div><div class="ev-note">สูงกว่าคาด → Gold ลงต่อ $4,186 &nbsp;|&nbsp; ต่ำกว่าคาด → Bounce $4,380+</div></div></div>
+  <div class="ev-row"><div class="ev-dot dm"></div><div class="ev-time">พ. 11 มิ.ย.</div><div><div class="ev-name">PPI May + FIFA World Cup เริ่ม</div><div class="ev-note">Volume อาจบาง &nbsp;·&nbsp; Leisure stocks benefit</div></div></div>
+  <div class="ev-row"><div class="ev-dot dm"></div><div class="ev-time">พฤ. 12 มิ.ย.</div><div><div class="ev-name">Jobless Claims + Iran-US talks</div><div class="ev-note">Geopolitical risk → Safe-haven demand ชั่วคราว</div></div></div>
+  <div class="ev-row"><div class="ev-dot dh"></div><div class="ev-time">ศ. 13 มิ.ย.</div><div><div class="ev-name">SpaceX IPO + Michigan Sentiment</div><div class="ev-note">Risk-off ถ้า IPO ดูด liquidity ออก</div></div></div>
+</div>
+
+<div class="sec">Institutional context</div>
+<div class="inst-grid">
+  <div class="inst-box">
+    <div class="inst-title inst-bear">&#9660; Bearish Case</div>
+    <div class="inst-text">
+      NFP 172K vs คาด 80K → Rate hike probability 73% ก่อนสิ้นปี<br>
+      Treasury 10Y &gt;4.5%, 30Y &gt;5% → opportunity cost ถือ Gold สูง<br>
+      USD แข็งต่อ → Gold denominated USD กดดัน<br>
+      Iran-US peace deal progress → safe-haven demand ลด
+    </div>
+  </div>
+  <div class="inst-box">
+    <div class="inst-title inst-bull">&#9650; Bullish Case (Long-term)</div>
+    <div class="inst-text">
+      Institutions target $5,243–$6,300 ปลายปี 2026<br>
+      Central bank buying ยังแข็งแกร่ง<br>
+      Geopolitical risk ยังคงอยู่ (Iran, Middle East)<br>
+      Yearly open support ยังไม่หลุด → Long-term bull intact
+    </div>
+  </div>
+</div>
+
+<div class="warn">
+  <div class="warn-icon">&#9888;</div>
+  <div class="warn-text">
+    <strong>ลด position size 50%</strong> ก่อน CPI วันอังคาร 10 มิ.ย. &nbsp;·&nbsp;
+    <strong>อย่าถือ position ข้าม CPI</strong> — ผันผวนสูงมาก &nbsp;·&nbsp;
+    ถ้า $4,268 หลุด → $4,186 เป็น next target &nbsp;·&nbsp;
+    Iran-US peace deal = Black Swan risk สำหรับ Gold
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <div class="ft-brand">GOLD TRADE PLAN</div>
+  <div class="ft-text">
+    ข้อมูลราคาจาก TradingView จริง (OANDA:XAUUSD) &nbsp;·&nbsp; 8 มิ.ย. 2026 &nbsp;·&nbsp; SMC + ICT + Elliott Wave Analysis<br>
+    ไม่ใช่คำแนะนำการลงทุน ใช้ประกอบการตัดสินใจเท่านั้น
+  </div>
+</footer>
+
+</body>
+</html>
